@@ -25,13 +25,14 @@ export const AboutSection = ({ data }: { data?: AboutData }) => {
           <div className="absolute bottom-0 right-0 aspect-[7/8] w-[46%] overflow-hidden lg:aspect-auto lg:h-[54%] rounded-[1.75rem] border-[0.4375rem] border-[var(--color-bg-main)] shadow-[0_1.75rem_3.5rem_-1.5rem_var(--color-shadow-photo)]">
             <Image quality={90} src={data.secondaryImage} alt={data.secondaryImageAlt} fill sizes="(min-width: 1024px) 280px, 46vw" className="object-cover" />
           </div>
-          <div className="absolute right-[2%] top-[8%] flex items-center gap-3 rounded-2xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] p-3 pr-5 text-[var(--color-white)] shadow-[0_1.25rem_2.5rem_-1rem_var(--color-shadow-button)] sm:p-4 sm:pr-6">
-            <span className="grid size-11 place-items-center rounded-xl bg-[var(--color-white-15)] sm:size-12">
-              <Icon name="LuShieldCheck" className="size-6" strokeWidth={1.9} />
+          {/* on phones the tag sits in the free space under the large photo; from tablets up it overlaps the top right */}
+          <div className="absolute bottom-0 left-0 flex items-center gap-2.5 rounded-2xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] p-2 pr-4 sm:bottom-auto sm:left-auto sm:right-[2%] sm:top-[8%] sm:gap-3 sm:p-3 sm:pr-5 text-[var(--color-white)] shadow-[0_1.25rem_2.5rem_-1rem_var(--color-shadow-button)] sm:p-4 sm:pr-6">
+            <span className="grid size-9 place-items-center rounded-xl bg-[var(--color-white-15)] sm:size-12">
+              <Icon name="LuShieldCheck" className="size-5 sm:size-6" strokeWidth={1.9} />
             </span>
             <span>
-              <span className="block font-heading text-2xl font-extrabold leading-none sm:text-[1.75rem]">{data.badge.value}</span>
-              <span className="mt-1 block text-xs font-medium text-[var(--color-white-80)]">{data.badge.label}</span>
+              <span className="block font-heading text-lg font-extrabold leading-none sm:text-[1.75rem]">{data.badge.value}</span>
+              <span className="mt-0.5 block text-[0.6875rem] font-medium text-[var(--color-white-80)] sm:mt-1 sm:text-xs">{data.badge.label}</span>
             </span>
           </div>
         </div>
@@ -59,7 +60,7 @@ export const AboutSection = ({ data }: { data?: AboutData }) => {
                   </span>
                 </span>
                 <div className="min-w-0">
-                  <h3 className="font-heading text-lg font-bold text-[var(--color-heading)]">{point.title}</h3>
+                  <h3 className="font-heading text-lg font-bold text-[var(--color-heading)] transition-colors group-hover:text-[var(--color-primary)]">{point.title}</h3>
                   <p className="mt-1 text-sm leading-relaxed text-[var(--color-text-muted)] sm:text-[0.9375rem]">{point.text}</p>
                 </div>
               </li>

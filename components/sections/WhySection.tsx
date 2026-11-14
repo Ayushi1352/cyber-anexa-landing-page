@@ -21,7 +21,7 @@ export const WhySection = ({ data }: { data?: WhyData }) => {
         <div>
           <SectionHeading tone="light" label={data.label} titleTop={data.titleTop} titleAccent={data.titleAccent} description={data.description} />
 
-          <div data-reveal className="group relative mt-10 aspect-[16/11] overflow-hidden rounded-[2rem] border border-[var(--color-white-10)]">
+          <div data-reveal className="group relative mt-10 aspect-[4/3.4] overflow-hidden sm:aspect-[16/11] rounded-[2rem] border border-[var(--color-white-10)]">
             <Image
               quality={90}
               src={data.image}
@@ -32,20 +32,20 @@ export const WhySection = ({ data }: { data?: WhyData }) => {
             />
             <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[var(--color-deep-85)] via-[var(--color-deep-0)] to-transparent" />
             {/* live status bar over the lower part of the photo */}
-            <div className="absolute inset-x-4 bottom-4 flex items-center justify-between gap-4 rounded-2xl border border-[var(--color-white-15)] bg-[var(--color-deep-70)] p-3.5 backdrop-blur-md sm:inset-x-5 sm:bottom-5 sm:p-4">
+            <div className="absolute inset-x-3 bottom-3 flex items-center justify-between gap-4 rounded-2xl border border-[var(--color-white-15)] bg-[var(--color-deep-70)] p-2.5 backdrop-blur-md sm:inset-x-5 sm:bottom-5 sm:p-4">
               <div className="flex min-w-0 items-center gap-3">
-                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[var(--color-success-15)] text-[var(--color-success)]">
+                <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-[var(--color-success-15)] text-[var(--color-success)] sm:size-10">
                   <Icon name="LuActivity" className="size-5" strokeWidth={2} />
                 </span>
                 <span className="min-w-0">
-                  <span className="block truncate font-heading text-sm font-bold text-[var(--color-white)] sm:text-base">{data.live.title}</span>
+                  <span className="block font-heading text-sm font-bold leading-tight text-[var(--color-white)] sm:truncate sm:text-base">{data.live.title}</span>
                   <span className="flex items-center gap-1.5 text-xs text-[var(--color-white-70)]">
                     <span className="size-1.5 rounded-full bg-[var(--color-success)]" aria-hidden="true" />
                     {data.live.text}
                   </span>
                 </span>
               </div>
-              <span aria-hidden="true" className="flex h-7 items-end gap-1">
+              <span aria-hidden="true" className="flex h-7 items-end gap-1 max-sm:hidden">
                 {BARS.map((height, index) => (
                   <span
                     key={index}

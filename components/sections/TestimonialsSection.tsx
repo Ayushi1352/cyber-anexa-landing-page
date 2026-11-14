@@ -49,15 +49,16 @@ export const TestimonialsSection = ({ data }: { data?: TestimonialsData }) => {
               </div>
             ))}
           </div>
-          <div className="absolute -left-3 bottom-10 rounded-2xl bg-[var(--color-bg-main)] p-4 shadow-[0_1.5rem_3rem_-1.25rem_var(--color-shadow-photo)] sm:-left-8 sm:p-5">
-            <p className="flex items-baseline gap-1 font-heading text-3xl font-extrabold text-[var(--color-heading)] sm:text-4xl">
+          {/* rating tag: a small pill on the bottom edge on phones, a card overlapping the photo's side from tablets up */}
+          <div className="absolute bottom-0 left-3 flex items-center gap-2.5 rounded-2xl bg-[var(--color-bg-main)] px-3.5 py-2.5 shadow-[0_1.5rem_3rem_-1.25rem_var(--color-shadow-photo)] sm:-left-8 sm:bottom-10 sm:block sm:p-5">
+            <p className="flex items-baseline gap-1 font-heading text-2xl font-extrabold text-[var(--color-heading)] sm:text-4xl">
               {data.rating}
-              <span className="text-base text-[var(--color-text-subtle)]">/5</span>
+              <span className="text-sm text-[var(--color-text-subtle)] sm:text-base">{data.ratingOutOf}</span>
             </p>
-            <p className="mt-1.5" role="img" aria-label={data.ratingLabel.replace("{rating}", String(data.rating))}>
-              <Stars rating={data.rating} className="size-4" />
+            <p className="sm:mt-1.5" role="img" aria-label={data.ratingLabel.replace("{rating}", String(data.rating))}>
+              <Stars rating={data.rating} className="size-3.5 sm:size-4" />
             </p>
-            <p className="mt-1.5 text-xs font-medium text-[var(--color-text-muted)]">{data.ratingText}</p>
+            <p className="mt-1.5 text-xs font-medium text-[var(--color-text-muted)] max-sm:hidden">{data.ratingText}</p>
           </div>
         </div>
 

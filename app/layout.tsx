@@ -47,10 +47,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           The whole site sits in one frame, at most 1920px wide and centred. Up to 1920px it fills the screen, so
           nothing changes; on wider screens or when the browser is zoomed out the page stays in the middle with
           equal space on both sides instead of stretching.
-          --section-gap is the same space above and below every section: 4.5rem on phones and tablets, 6rem on
-          desktop (96px at 1440px; it scales with the page, see the font size above).
+          --section-gap is the space above and below every section: 60px on every screen (phones, tablets, 1024px and
+          desktop). It is in px on purpose, so it does not shrink with the rem scaling at 1024px.
         */}
-        <div className="mx-auto flex min-h-screen w-full max-w-[120rem] flex-col overflow-x-clip bg-[var(--color-bg-main)] [--section-gap:4.5rem] lg:[--section-gap:6rem]">
+        <div className="mx-auto flex min-h-screen w-full max-w-[120rem] flex-col overflow-x-clip bg-[var(--color-bg-main)] [--section-gap:60px]">
           <Header data={headerData} company={commonData.company} />
           {children}
           <ScrollReveal />

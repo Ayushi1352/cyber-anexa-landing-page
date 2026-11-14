@@ -337,7 +337,7 @@
           "variants": {
             "CyberSecurityProjects1": {
               "id": "projects",
-              "label": "Our Portfolio",
+              "label": "Our Projects",
               "titleTop": "Recent Cyber Security Projects",
               "titleAccent": "Across Industries.",
               "description": "Explore a selection of our recent cybersecurity projects, showcasing how we help businesses protect their digital assets and ensure a safer tomorrow.",
@@ -416,7 +416,8 @@
                   "image": "/images/team-ananya-patel.webp"
                 }
               ],
-              "badge": "Certified Expert"
+              "previousLabel": "Previous team member",
+              "nextLabel": "Next team member"
             }
           }
         },
@@ -428,6 +429,7 @@
               "titleTop": "See What Our Clients",
               "titleAccent": "Say About Us.",
               "rating": 4.9,
+              "ratingOutOf": "/5",
               "ratingLabel": "Rated {rating} out of 5",
               "ratingText": "Average client rating",
               "previousLabel": "Previous testimonial",

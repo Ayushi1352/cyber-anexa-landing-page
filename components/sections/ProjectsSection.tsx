@@ -52,7 +52,7 @@ export const ProjectsSection = ({ data }: { data?: ProjectsData }) => {
                 </span>
                 <span
                   aria-hidden="true"
-                  className="grid size-11 shrink-0 place-items-center rounded-full bg-[var(--color-white)] text-[var(--color-primary)] transition-transform duration-500 group-hover:rotate-45"
+                  className="grid size-11 shrink-0 place-items-center rounded-full bg-[var(--color-white)] text-[var(--color-primary)] transition-[background-color,color,transform] duration-500 group-hover:rotate-45 group-hover:bg-[var(--color-primary)] group-hover:text-[var(--color-white)]"
                 >
                   <Icon name="LuArrowUpRight" className="size-5" strokeWidth={2.2} />
                 </span>

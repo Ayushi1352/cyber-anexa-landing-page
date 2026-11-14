@@ -32,7 +32,7 @@ export const ServicesSection = ({ data }: { data?: ServicesData }) => {
               key={item.id}
               data-reveal
               data-reveal-delay={(index % 3) * 90}
-              className="group relative isolate flex aspect-[5/6] shrink-0 basis-[82%] snap-start flex-col justify-between overflow-hidden rounded-[1.75rem] p-5 shadow-[0_1.25rem_2.5rem_-1.75rem_var(--color-shadow-photo)] sm:aspect-[5/5.6] sm:p-6"
+              className="group relative isolate flex min-h-[26rem] shrink-0 basis-[82%] snap-start flex-col justify-between gap-8 overflow-hidden rounded-[1.75rem] p-5 shadow-[0_1.25rem_2.5rem_-1.75rem_var(--color-shadow-photo)] sm:p-6 lg:aspect-[5/5.6] lg:min-h-0"
             >
               <Image
                 quality={90}
@@ -65,10 +65,10 @@ export const ServicesSection = ({ data }: { data?: ServicesData }) => {
                 <a
                   href={data.linkUrl}
                   aria-label={`${data.linkText} — ${item.title}`}
-                  className="mt-5 inline-flex items-center gap-2.5 font-heading text-sm font-semibold text-[var(--color-white)] after:absolute after:inset-0"
+                  className="mt-5 inline-flex items-center gap-2.5 font-heading text-sm font-semibold text-[var(--color-white)] transition-colors duration-300 after:absolute after:inset-0 group-hover:text-[var(--color-primary-light)]"
                 >
                   {data.linkText}
-                  <span className="grid size-8 place-items-center rounded-full bg-[var(--color-white)] text-[var(--color-primary)] transition-transform duration-300 group-hover:translate-x-1">
+                  <span className="grid size-8 place-items-center rounded-full bg-[var(--color-white)] text-[var(--color-primary)] transition-[background-color,color,transform] duration-300 group-hover:-rotate-45 group-hover:bg-[var(--color-primary)] group-hover:text-[var(--color-white)]">
                     <Icon name="LuArrowRight" className="size-4" strokeWidth={2.4} />
                   </span>
                 </a>

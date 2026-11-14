@@ -5,7 +5,7 @@ import type { FormField, QuoteFormData } from "@/types/templates.types";
 import { useDummySubmit } from "@/components/ui/useDummySubmit";
 import { Icon } from "@/components/ui/Icon";
 import { FormSuccess, Spinner } from "@/components/ui/FormSuccess";
-import { buttonStyles } from "@/components/ui/buttonStyles";
+import { arrowClass, buttonStyles } from "@/components/ui/buttonStyles";
 
 /** Soft form fields */
 const base =
@@ -111,7 +111,7 @@ export const QuoteForm = ({ data }: { data?: QuoteFormData }) => {
           ) : (
             <>
               {data.button}
-              <Icon name="LuArrowRight" className="size-[1.125rem]" strokeWidth={2.2} />
+              <Icon name="LuArrowRight" className={arrowClass} strokeWidth={2.4} />
             </>
           )}
         </button>

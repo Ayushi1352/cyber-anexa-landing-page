@@ -106,7 +106,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
                   href={link.url}
                   aria-current={current ? "location" : undefined}
                   className={`relative whitespace-nowrap rounded-full px-4 py-2 font-heading text-[0.9375rem] font-semibold transition-colors ${
-                    current ? "bg-[var(--color-white-10)] text-[var(--color-white)]" : "text-[var(--color-white-70)] hover:text-[var(--color-white)]"
+                    current ? "bg-[var(--color-white-10)] text-[var(--color-white)]" : "text-[var(--color-white-70)] hover:text-[var(--color-primary-light)]"
                   }`}
                 >
                   {link.label}
@@ -116,7 +116,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
           </nav>
 
           <div className="flex items-center gap-2">
-            <a href={data.buttonUrl} className={`${buttonStyles.primary} h-11 px-6 max-sm:hidden lg:h-[3.25rem]`}>
+            <a href={data.buttonUrl} className={`${buttonStyles.primaryOnDark} h-11 px-6 max-lg:hidden lg:h-[3.25rem]`}>
               {data.buttonText}
               <Icon name="LuArrowRight" className={arrowClass} strokeWidth={2.4} />
             </a>
@@ -133,7 +133,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
           </div>
         </header>
 
-        {/* phones and tablets: a card that drops down under the bar, only as tall as its links (scrolls if they do not fit) */}
+        {/* phones and tablets (same layout on both): a card that drops down under the bar, only as tall as its links (scrolls if they do not fit) */}
         <nav
           id="mobile-menu"
           aria-label={data.mobileNavLabel}
@@ -143,7 +143,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
           }`}
         >
           <div className="min-h-0 overflow-y-auto">
-            <ul className="grid gap-1 p-3 sm:grid-cols-2">
+            <ul className="grid gap-1 p-3">
               {data.navLinks.map((link) => {
                 const current = sectionId(link.url) === active;
                 return (
@@ -154,7 +154,7 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
                       className={`flex items-center justify-between rounded-2xl px-4 py-3.5 font-heading font-semibold transition-colors ${
                         current
                           ? "bg-[var(--color-white-10)] text-[var(--color-white)]"
-                          : "text-[var(--color-white-80)] hover:bg-[var(--color-white-6)] hover:text-[var(--color-white)]"
+                          : "text-[var(--color-white-80)] hover:bg-[var(--color-white-6)] hover:text-[var(--color-primary-light)]"
                       }`}
                     >
                       {link.label}
@@ -164,8 +164,8 @@ export const Header = ({ data, company }: { data?: HeaderData; company: CompanyD
                 );
               })}
             </ul>
-            <div className="grid gap-2.5 border-t border-[var(--color-white-10)] p-4 sm:grid-cols-2">
-              <a href={data.buttonUrl} onClick={() => setOpen(false)} className={`${buttonStyles.primary} w-full`}>
+            <div className="grid gap-2.5 border-t border-[var(--color-white-10)] p-4">
+              <a href={data.buttonUrl} onClick={() => setOpen(false)} className={`${buttonStyles.primaryOnDark} w-full`}>
                 {data.buttonText}
                 <Icon name="LuArrowRight" className={arrowClass} strokeWidth={2.4} />
               </a>

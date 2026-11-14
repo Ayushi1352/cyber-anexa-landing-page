@@ -37,7 +37,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
             {data.titleTop} <span className={`${accentText} from-[var(--color-primary-light)] via-[var(--color-accent)] to-[var(--color-primary-light)]`}>{data.titleAccent}</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--color-white-70)] sm:text-lg">{data.description}</p>
-          <a href={data.buttonUrl} className={`${buttonStyles.primary} mt-9`}>
+          <a href={data.buttonUrl} className={`${buttonStyles.primaryOnDark} mt-9`}>
             {data.buttonText}
             <Icon name="LuArrowRight" className={arrowClass} strokeWidth={2.4} />
           </a>
@@ -68,7 +68,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           </div>
 
           {/* live monitoring tag */}
-          <p className="absolute right-6 top-8 flex items-center gap-2 rounded-full border border-[var(--color-white-15)] bg-[var(--color-deep-70)] px-3.5 py-2 font-heading text-xs font-semibold text-[var(--color-white)] backdrop-blur-md sm:right-8 sm:top-10">
+          <p className="absolute right-5 top-6 flex items-center gap-2 rounded-full border border-[var(--color-white-15)] bg-[var(--color-deep-70)] px-3 py-1.5 font-heading text-[0.6875rem] sm:px-3.5 sm:py-2 sm:text-xs font-semibold text-[var(--color-white)] backdrop-blur-md sm:right-8 sm:top-10">
             <span className="relative flex size-2">
               <span className="absolute inset-0 animate-ping rounded-full bg-[var(--color-success)] motion-reduce:hidden" />
               <span className="relative size-2 rounded-full bg-[var(--color-success)]" />
@@ -76,8 +76,8 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
             {data.monitoring}
           </p>
 
-          {/* threat blocked alert */}
-          <div className="absolute -left-2 top-[38%] flex max-w-[15.5rem] animate-float items-center gap-3 rounded-2xl border border-[var(--color-white-15)] bg-[var(--color-deep-85)] p-3 pr-4 shadow-[0_1.25rem_2.5rem_-1rem_var(--color-shadow-float)] backdrop-blur-md motion-reduce:animate-none sm:-left-8 lg:-left-12">
+          {/* threat blocked alert (tablets and up; on phones it would cover the photo) */}
+          <div className="absolute -left-2 top-[38%] flex max-w-[15.5rem] max-sm:hidden animate-float items-center gap-3 rounded-2xl border border-[var(--color-white-15)] bg-[var(--color-deep-85)] p-3 pr-4 shadow-[0_1.25rem_2.5rem_-1rem_var(--color-shadow-float)] backdrop-blur-md motion-reduce:animate-none sm:-left-8 lg:-left-12">
             <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[var(--color-success-15)] text-[var(--color-success)]">
               <Icon name="LuShieldCheck" className="size-6" strokeWidth={2} />
             </span>
@@ -90,8 +90,8 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
             </span>
           </div>
 
-          {/* protection status */}
-          <div className="absolute -bottom-4 right-2 w-[13.5rem] animate-float rounded-2xl bg-[var(--color-white)] p-4 shadow-[0_1.5rem_3rem_-1rem_var(--color-shadow-float)] [animation-delay:-3s] motion-reduce:animate-none sm:-right-6 sm:w-60">
+          {/* protection status (compact on phones) */}
+          <div className="absolute -bottom-3 right-1 w-44 animate-float rounded-2xl bg-[var(--color-white)] p-3 sm:-bottom-4 sm:p-4 shadow-[0_1.5rem_3rem_-1rem_var(--color-shadow-float)] [animation-delay:-3s] motion-reduce:animate-none sm:-right-6 sm:w-60">
             <div className="flex items-center gap-3">
               <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] text-[var(--color-white)]">
                 <Icon name="LuLock" className="size-5" strokeWidth={2} />

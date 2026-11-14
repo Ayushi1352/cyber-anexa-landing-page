@@ -177,7 +177,8 @@ export interface TeamData {
   titleTop: string;
   titleAccent: string;
   description: string;
-  badge: string;
+  previousLabel: string;
+  nextLabel: string;
   members: TeamMember[];
 }
 
@@ -196,6 +197,7 @@ export interface TestimonialsData {
   titleTop: string;
   titleAccent: string;
   rating: number;
+  ratingOutOf: string;
   ratingLabel: string;
   ratingText: string;
   previousLabel: string;
