@@ -1,0 +1,606 @@
+{
+  "common": {
+    "theme": {
+      "fonts": {
+        "primary": "var(--font-inter)",
+        "heading": "var(--font-jakarta)"
+      }
+    },
+    "metadata": {
+      "title": "CyberAnexa | Advanced Cyber Security Solutions",
+      "description": "CyberAnexa delivers innovative cybersecurity solutions — network, cloud and endpoint security, threat detection, penetration testing and compliance — to protect your data, systems and business. Get a quote today.",
+      "icon": "/images/favicon.png",
+      "lang": "en"
+    },
+    "company": {
+      "name": "CyberAnexa",
+      "logo": "/images/logo.webp",
+      "logoLight": "/images/logo-white.webp",
+      "logoAlt": "CyberAnexa",
+      "logoWidth": 1000,
+      "logoHeight": 218,
+      "contactItems": [
+        {
+          "id": "our-office",
+          "icon": "LuMapPin",
+          "title": "Our Office",
+          "lines": [
+            "350 Fifth Avenue,",
+            "New York, NY 10118, USA"
+          ],
+          "url": "https://www.google.com/maps?q=350%20Fifth%20Avenue%2C%20New%20York%2C%20NY%2010118%2C%20USA"
+        },
+        {
+          "id": "call-us",
+          "icon": "LuPhone",
+          "title": "Call Us",
+          "lines": [
+            "+1 0000000000"
+          ],
+          "url": "tel:+10000000000"
+        },
+        {
+          "id": "email-us",
+          "icon": "LuMail",
+          "title": "Email Us",
+          "lines": [
+            "info@xyz.com"
+          ],
+          "url": "mailto:info@xyz.com"
+        }
+      ],
+      "socialLinks": [
+        {
+          "id": "facebook",
+          "icon": "FaFacebookF",
+          "label": "Facebook",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "id": "instagram",
+          "icon": "FaInstagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/"
+        },
+        {
+          "id": "linkedin",
+          "icon": "FaLinkedinIn",
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/"
+        },
+        {
+          "id": "youtube",
+          "icon": "FaYoutube",
+          "label": "YouTube",
+          "url": "https://www.youtube.com/"
+        }
+      ]
+    },
+    "Footer": {
+      "description": "We help businesses stay secure, resilient and ahead of evolving cyber threats with innovative solutions and expert guidance.",
+      "quickLinksTitle": "Quick Links",
+      "contactTitle": "Get In Touch",
+      "copyrightText": "© {year} CyberAnexa. All Rights Reserved. Powered by Lestow.",
+      "motto": [
+        "Secure",
+        "Resilient",
+        "Ahead"
+      ]
+    }
+  },
+  "categories": {
+    "CyberSecurity": {
+      "sections": {
+        "Header": {
+          "variants": {
+            "CyberSecurityHeader1": {
+              "logoUrl": "/",
+              "homeLabel": "CyberAnexa — back to top",
+              "navLinks": [
+                {
+                  "id": "home",
+                  "label": "Home",
+                  "url": "#home"
+                },
+                {
+                  "id": "about-us",
+                  "label": "About Us",
+                  "url": "#about"
+                },
+                {
+                  "id": "services",
+                  "label": "Services",
+                  "url": "#services"
+                },
+                {
+                  "id": "projects",
+                  "label": "Projects",
+                  "url": "#projects"
+                },
+                {
+                  "id": "team",
+                  "label": "Team",
+                  "url": "#team"
+                },
+                {
+                  "id": "testimonials",
+                  "label": "Testimonials",
+                  "url": "#testimonials"
+                },
+                {
+                  "id": "contact-us",
+                  "label": "Contact Us",
+                  "url": "#contact"
+                }
+              ],
+              "buttonText": "Contact Us",
+              "buttonUrl": "#contact",
+              "mainNavLabel": "Main navigation",
+              "mobileNavLabel": "Mobile navigation",
+              "openMenuLabel": "Open menu",
+              "closeMenuLabel": "Close menu"
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "CyberSecurityHero1": {
+              "id": "home",
+              "label": "Advanced Cyber Security Solutions",
+              "titleTop": "Protecting Your Business For a",
+              "titleAccent": "Safer Tomorrow",
+              "description": "At CyberAnexa, we deliver innovative cybersecurity solutions to protect your data, systems and business from evolving digital threats.",
+              "buttonText": "Contact Us",
+              "buttonUrl": "#contact",
+              "image": "/images/hero.webp",
+              "imageAlt": "Cyber security analyst monitoring a protected network",
+              "alert": {
+                "title": "Threat Blocked",
+                "text": "Suspicious login attempt stopped",
+                "time": "Just now"
+              },
+              "status": {
+                "label": "Network Protected",
+                "value": "100%"
+              },
+              "monitoring": "24/7 Live Monitoring"
+            }
+          }
+        },
+        "About": {
+          "variants": {
+            "CyberSecurityAbout1": {
+              "id": "about",
+              "label": "About Our Company",
+              "titleTop": "Building A Safer Digital Future",
+              "titleAccent": "For Your Business",
+              "paragraphs": [
+                "At CyberAnexa, we help businesses stay ahead of evolving cyber threats through innovative security solutions, expert guidance and proactive risk management — so you can focus on growing your business with complete peace of mind."
+              ],
+              "primaryImage": "/images/about-meeting.webp",
+              "primaryImageAlt": "Security consultant presenting a cyber security strategy",
+              "secondaryImage": "/images/about-analysts.webp",
+              "secondaryImageAlt": "Analysts reviewing global threat data",
+              "badge": {
+                "value": "24/7",
+                "label": "Security Operations"
+              },
+              "points": [
+                {
+                  "id": "strategic-security-planning",
+                  "number": "01",
+                  "icon": "LuCompass",
+                  "title": "Strategic Security Planning",
+                  "text": "A clear security roadmap built around your business goals, risks and compliance needs."
+                },
+                {
+                  "id": "advanced-threat-intelligence",
+                  "number": "02",
+                  "icon": "LuRadar",
+                  "title": "Advanced Threat Intelligence",
+                  "text": "Early insight into emerging attacks so risks are identified before they reach your systems."
+                },
+                {
+                  "id": "end-to-end-security-support",
+                  "number": "03",
+                  "icon": "LuLifeBuoy",
+                  "title": "End-to-End Security Support",
+                  "text": "From assessment to implementation and ongoing monitoring, our team is with you at every step."
+                }
+              ]
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "CyberSecurityServices1": {
+              "id": "services",
+              "label": "Our Services",
+              "titleTop": "Comprehensive Cyber Security Services",
+              "titleAccent": "To Protect Your Digital World.",
+              "description": "From your network and cloud to every device and data record, we secure each layer of your business with expert-led protection.",
+              "linkText": "Contact Us",
+              "linkUrl": "#contact",
+              "swipeHint": "Swipe to see all services",
+              "items": [
+                {
+                  "id": "network-security",
+                  "icon": "LuNetwork",
+                  "title": "Network Security",
+                  "text": "Protect your network infrastructure from unauthorized access, threats, and cyber attacks, ensuring uninterrupted and secure business operations.",
+                  "image": "/images/service-network-security.webp"
+                },
+                {
+                  "id": "cloud-security",
+                  "icon": "LuCloud",
+                  "title": "Cloud Security",
+                  "text": "Secure your cloud environments, data and applications with advanced protection, monitoring and compliance strategies.",
+                  "image": "/images/service-cloud-security.webp"
+                },
+                {
+                  "id": "endpoint-security",
+                  "icon": "LuMonitorSmartphone",
+                  "title": "Endpoint Security",
+                  "text": "Keep your laptops, desktops, mobiles and servers protected from evolving threats and malware, wherever your team works.",
+                  "image": "/images/service-endpoint-security.webp"
+                },
+                {
+                  "id": "threat-detection-and-response",
+                  "icon": "LuRadar",
+                  "title": "Threat Detection & Response",
+                  "text": "Identify, analyze and respond to cyber threats in real time to minimize risks and stop breaches before they impact your business.",
+                  "image": "/images/service-threat-detection.webp"
+                },
+                {
+                  "id": "vulnerability-assessment",
+                  "icon": "LuScanSearch",
+                  "title": "Vulnerability Assessment",
+                  "text": "Find and fix security weaknesses in your systems before they can be exploited by attackers.",
+                  "image": "/images/service-vulnerability-assessment.webp"
+                },
+                {
+                  "id": "penetration-testing",
+                  "icon": "LuBug",
+                  "title": "Penetration Testing",
+                  "text": "Simulate real-world attacks to identify security gaps and strengthen your defenses with a clear, prioritized fix plan.",
+                  "image": "/images/service-penetration-testing.webp"
+                },
+                {
+                  "id": "security-compliance",
+                  "icon": "LuFileCheck",
+                  "title": "Security Compliance",
+                  "text": "Stay compliant with industry standards and regulations with expert guidance, audits and ongoing support.",
+                  "image": "/images/service-security-compliance.webp"
+                },
+                {
+                  "id": "data-protection-and-backup",
+                  "icon": "LuDatabaseBackup",
+                  "title": "Data Protection & Backup",
+                  "text": "Safeguard your critical data with secure backup and disaster recovery solutions that keep your business running.",
+                  "image": "/images/service-data-protection.webp"
+                },
+                {
+                  "id": "cyber-security-consulting",
+                  "icon": "LuBriefcase",
+                  "title": "Cyber Security Consulting",
+                  "text": "Get expert advice, risk assessments and strategic solutions to strengthen your overall security posture.",
+                  "image": "/images/service-security-consulting.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Why": {
+          "variants": {
+            "CyberSecurityWhy1": {
+              "id": "why-us",
+              "label": "Why Choose Us",
+              "titleTop": "Why Businesses Trust Our",
+              "titleAccent": "Cyber Security Solutions",
+              "description": "Certified experts, tailor-made strategies and round-the-clock protection — everything your business needs to stay one step ahead of attackers.",
+              "image": "/images/why-choose-us.webp",
+              "imageAlt": "Security operations team at work",
+              "live": {
+                "title": "Security Operations Center",
+                "text": "Monitoring active"
+              },
+              "items": [
+                {
+                  "id": "proven-expertise",
+                  "icon": "LuBadgeCheck",
+                  "title": "Proven Expertise",
+                  "text": "Our certified security professionals bring deep industry experience to deliver reliable and effective protection for your business."
+                },
+                {
+                  "id": "customized-security-solutions",
+                  "icon": "LuSlidersHorizontal",
+                  "title": "Customized Security Solutions",
+                  "text": "We understand your unique business needs and provide tailor-made cybersecurity strategies for maximum protection and resilience."
+                },
+                {
+                  "id": "proactive-threat-protection",
+                  "icon": "LuShieldCheck",
+                  "title": "Proactive Threat Protection",
+                  "text": "We continuously monitor, detect and prevent cyber threats before they impact your systems and business operations."
+                },
+                {
+                  "id": "security-support",
+                  "icon": "LuHeadset",
+                  "title": "24/7 Security Support",
+                  "text": "Our dedicated team provides round-the-clock monitoring, quick incident response and continuous support for your peace of mind."
+                }
+              ]
+            }
+          }
+        },
+        "Projects": {
+          "variants": {
+            "CyberSecurityProjects1": {
+              "id": "projects",
+              "label": "Our Portfolio",
+              "titleTop": "Recent Cyber Security Projects",
+              "titleAccent": "Across Industries.",
+              "description": "Explore a selection of our recent cybersecurity projects, showcasing how we help businesses protect their digital assets and ensure a safer tomorrow.",
+              "items": [
+                {
+                  "id": "soc-setup-for-a-leading-bank",
+                  "category": "Financial Services",
+                  "title": "Security Operations Center Setup for a Leading Bank",
+                  "image": "/images/project-soc-setup.webp"
+                },
+                {
+                  "id": "threat-detection-for-a-healthcare-provider",
+                  "category": "Healthcare",
+                  "title": "Real-time Threat Detection for a Healthcare Provider",
+                  "image": "/images/project-threat-detection.webp"
+                },
+                {
+                  "id": "cloud-security-for-a-global-e-commerce-brand",
+                  "category": "Retail & E-commerce",
+                  "title": "Cloud Security Implementation for a Global E-commerce Brand",
+                  "image": "/images/project-cloud-implementation.webp"
+                },
+                {
+                  "id": "security-assessment-for-a-manufacturing-firm",
+                  "category": "Manufacturing",
+                  "title": "Security Assessment & Compliance for a Leading Manufacturing Firm",
+                  "image": "/images/project-security-assessment.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "CyberSecurityTeam1": {
+              "id": "team",
+              "label": "Meet Our Team",
+              "titleTop": "The People Empowering Your",
+              "titleAccent": "Cyber Security Journey.",
+              "description": "Our experienced professionals are committed to delivering innovative security solutions and ensuring a safer digital future for your business.",
+              "members": [
+                {
+                  "id": "rohan-mehta",
+                  "name": "Rohan Mehta",
+                  "role": "Chief Security Officer",
+                  "image": "/images/team-rohan-mehta.webp"
+                },
+                {
+                  "id": "priya-sharma",
+                  "name": "Priya Sharma",
+                  "role": "Cyber Security Consultant",
+                  "image": "/images/team-priya-sharma.webp"
+                },
+                {
+                  "id": "amit-verma",
+                  "name": "Amit Verma",
+                  "role": "Threat Intelligence Expert",
+                  "image": "/images/team-amit-verma.webp"
+                },
+                {
+                  "id": "neha-kapoor",
+                  "name": "Neha Kapoor",
+                  "role": "Security Analyst",
+                  "image": "/images/team-neha-kapoor.webp"
+                },
+                {
+                  "id": "vikram-malhotra",
+                  "name": "Vikram Malhotra",
+                  "role": "Cloud Security Architect",
+                  "image": "/images/team-vikram-malhotra.webp"
+                },
+                {
+                  "id": "ananya-patel",
+                  "name": "Ananya Patel",
+                  "role": "Incident Response Specialist",
+                  "image": "/images/team-ananya-patel.webp"
+                }
+              ],
+              "badge": "Certified Expert"
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "CyberSecurityTestimonials1": {
+              "id": "testimonials",
+              "label": "Our Testimonials",
+              "titleTop": "See What Our Clients",
+              "titleAccent": "Say About Us.",
+              "rating": 4.9,
+              "ratingLabel": "Rated {rating} out of 5",
+              "ratingText": "Average client rating",
+              "previousLabel": "Previous testimonial",
+              "nextLabel": "Next testimonial",
+              "showLabel": "Show testimonial from {name}",
+              "items": [
+                {
+                  "id": "rohan-mehta",
+                  "name": "Rohan Mehta",
+                  "role": "IT Manager, TechSphere Pvt. Ltd.",
+                  "avatar": "/images/avatar-rohan-mehta.webp",
+                  "image": "/images/client-rohan-mehta.webp",
+                  "quote": "The team provided exceptional cybersecurity solutions that significantly improved our security posture. Their expertise, proactive approach, and 24/7 support gave us complete peace of mind. We highly recommend their services to any organization looking for reliable and professional cybersecurity support."
+                },
+                {
+                  "id": "ananya-gupta",
+                  "name": "Ananya Gupta",
+                  "role": "CTO, FinEdge Solutions",
+                  "avatar": "/images/avatar-ananya-gupta.webp",
+                  "image": "/images/client-ananya-gupta.webp",
+                  "quote": "CyberAnexa set up our security operations from the ground up. Their team identified risks we never knew existed and delivered a clear roadmap that our board could understand. Response times are excellent and the reporting is always clear and actionable."
+                },
+                {
+                  "id": "vikram-singh",
+                  "name": "Vikram Singh",
+                  "role": "Operations Head, MediCare Plus",
+                  "avatar": "/images/avatar-vikram-singh.webp",
+                  "image": "/images/client-vikram-singh.webp",
+                  "quote": "Protecting patient data is critical for us. CyberAnexa implemented real-time threat detection across all our facilities and trained our staff on security best practices. We now feel fully confident in our compliance and security readiness."
+                },
+                {
+                  "id": "sneha-kapoor",
+                  "name": "Sneha Kapoor",
+                  "role": "Director, RetailHub India",
+                  "avatar": "/images/avatar-sneha-kapoor.webp",
+                  "image": "/images/client-sneha-kapoor.webp",
+                  "quote": "Our move to the cloud was smooth and secure thanks to CyberAnexa. They designed a cloud security framework that scales with our business and their round-the-clock monitoring has stopped several attacks before they could cause any damage."
+                },
+                {
+                  "id": "arjun-malhotra",
+                  "name": "Arjun Malhotra",
+                  "role": "CEO, BuildRight Manufacturing",
+                  "avatar": "/images/avatar-arjun-malhotra.webp",
+                  "image": "/images/client-arjun-malhotra.webp",
+                  "quote": "From the vulnerability assessment to the final compliance audit, the CyberAnexa team was professional, transparent and highly skilled. They made a complex process simple and helped us meet every industry requirement on time."
+                }
+              ]
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "CyberSecurityContact1": {
+              "id": "contact",
+              "label": "Get a Quote",
+              "titleTop": "Request a Quote For Your",
+              "titleAccent": "Cyber Security Needs.",
+              "description": "Tell us about your requirements and our experts will provide a customized quote tailored to your business security needs.",
+              "image": "/images/contact-security.webp",
+              "form": {
+                "title": "Get a Customized",
+                "titleAccent": "Quote",
+                "description": "Fill out the form below with your details and requirements. Our team will get back to you with a tailored quote."
+              }
+            }
+          }
+        },
+        "QuoteForm": {
+          "variants": {
+            "CyberSecurityQuoteForm1": {
+              "fields": {
+                "name": {
+                  "label": "Full Name",
+                  "placeholder": "Enter your full name",
+                  "required": true
+                },
+                "email": {
+                  "label": "Email Address",
+                  "placeholder": "Enter your email address",
+                  "required": true
+                },
+                "company": {
+                  "label": "Company Name",
+                  "placeholder": "Enter your company name",
+                  "required": false
+                },
+                "phone": {
+                  "label": "Phone Number",
+                  "placeholder": "Enter your phone number",
+                  "required": true
+                },
+                "service": {
+                  "label": "Service Required",
+                  "placeholder": "Select a service",
+                  "required": true
+                },
+                "budget": {
+                  "label": "Budget (Optional)",
+                  "placeholder": "Enter your budget range",
+                  "required": false
+                },
+                "message": {
+                  "label": "Message",
+                  "placeholder": "Tell us about your requirements...",
+                  "required": true
+                }
+              },
+              "serviceOptions": [
+                "Network Security",
+                "Cloud Security",
+                "Endpoint Security",
+                "Threat Detection & Response",
+                "Vulnerability Assessment",
+                "Penetration Testing",
+                "Security Compliance",
+                "Data Protection & Backup",
+                "Cyber Security Consulting"
+              ],
+              "button": "Contact Us",
+              "sending": "Sending…",
+              "successTitle": "Thank you, {name}!",
+              "success": "Your quote request has been received. Our team will contact you within 24 hours.",
+              "closeLabel": "Close message"
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "template-1": {
+          "shared": {
+            "Header": "CyberSecurityHeader1",
+            "Footer": "common.Footer"
+          },
+          "pages": {
+            "home": {
+              "components": [
+                {
+                  "key": "Hero",
+                  "component": "CyberSecurityHero1"
+                },
+                {
+                  "key": "About",
+                  "component": "CyberSecurityAbout1"
+                },
+                {
+                  "key": "Services",
+                  "component": "CyberSecurityServices1"
+                },
+                {
+                  "key": "Why",
+                  "component": "CyberSecurityWhy1"
+                },
+                {
+                  "key": "Projects",
+                  "component": "CyberSecurityProjects1"
+                },
+                {
+                  "key": "Team",
+                  "component": "CyberSecurityTeam1"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "CyberSecurityTestimonials1"
+                },
+                {
+                  "key": "Contact",
+                  "component": "CyberSecurityContact1"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
