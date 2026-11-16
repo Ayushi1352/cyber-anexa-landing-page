@@ -48,7 +48,12 @@
           ],
           "url": "mailto:info@xyz.com"
         }
-      ],
+      ]
+    },
+    "Footer": {
+      "description": "We help businesses stay secure, resilient and ahead of evolving cyber threats with innovative solutions and expert guidance.",
+      "quickLinksTitle": "Quick Links",
+      "contactTitle": "Get In Touch",
       "socialLinks": [
         {
           "id": "facebook",
@@ -74,12 +79,7 @@
           "label": "YouTube",
           "url": "https://www.youtube.com/"
         }
-      ]
-    },
-    "Footer": {
-      "description": "We help businesses stay secure, resilient and ahead of evolving cyber threats with innovative solutions and expert guidance.",
-      "quickLinksTitle": "Quick Links",
-      "contactTitle": "Get In Touch",
+      ],
       "copyrightText": "© {year} CyberAnexa. All Rights Reserved. Powered by Lestow.",
       "motto": [
         "Secure",
@@ -188,21 +188,18 @@
               "points": [
                 {
                   "id": "strategic-security-planning",
-                  "number": "01",
                   "icon": "LuCompass",
                   "title": "Strategic Security Planning",
                   "text": "A clear security roadmap built around your business goals, risks and compliance needs."
                 },
                 {
                   "id": "advanced-threat-intelligence",
-                  "number": "02",
                   "icon": "LuRadar",
                   "title": "Advanced Threat Intelligence",
                   "text": "Early insight into emerging attacks so risks are identified before they reach your systems."
                 },
                 {
                   "id": "end-to-end-security-support",
-                  "number": "03",
                   "icon": "LuLifeBuoy",
                   "title": "End-to-End Security Support",
                   "text": "From assessment to implementation and ongoing monitoring, our team is with you at every step."

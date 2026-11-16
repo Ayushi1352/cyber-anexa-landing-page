@@ -43,14 +43,13 @@ export interface CompanyData {
   logoWidth: number;
   logoHeight: number;
   contactItems: ContactItem[];
-  socialLinks: SocialLink[];
 }
 
 export interface FooterData {
   description: string;
   quickLinksTitle: string;
-  servicesTitle?: string;
   contactTitle: string;
+  socialLinks: SocialLink[];
   copyrightText: string;
   motto: string[];
 }
@@ -96,10 +95,6 @@ export interface HeroData {
   monitoring: string;
 }
 
-export interface AboutPoint extends IconCard {
-  number: string;
-}
-
 export interface AboutData {
   id: string;
   label: string;
@@ -114,7 +109,7 @@ export interface AboutData {
     value: string;
     label: string;
   };
-  points: AboutPoint[];
+  points: IconCard[];
 }
 
 export interface ServiceItem extends IconCard {

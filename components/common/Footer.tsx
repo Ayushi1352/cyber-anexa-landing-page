@@ -39,7 +39,7 @@ export const Footer = async ({
           <Image src={company.logoLight} alt={company.name} width={company.logoWidth} height={company.logoHeight} sizes="220px" className="h-auto w-52" />
           <p className="mt-5 max-w-sm leading-relaxed">{data.description}</p>
           <div className="mt-6 flex gap-2.5">
-            {company.socialLinks.map((social) => (
+            {data.socialLinks.map((social) => (
               <a
                 key={social.id}
                 href={social.url}

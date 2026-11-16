@@ -56,7 +56,7 @@ export const AboutSection = ({ data }: { data?: AboutData }) => {
                 <span className="relative grid size-14 shrink-0 place-items-center rounded-2xl bg-[var(--color-bg-subtle)] text-[var(--color-primary)] transition-colors duration-300 group-hover:bg-[var(--color-primary)] group-hover:text-[var(--color-white)]">
                   <Icon name={point.icon} className="size-6" strokeWidth={1.8} />
                   <span className="absolute -right-2 -top-2 grid size-6 place-items-center rounded-full bg-[var(--color-heading)] font-heading text-[0.625rem] font-bold text-[var(--color-white)]">
-                    {point.number}
+                    {String(index + 1).padStart(2, "0")}
                   </span>
                 </span>
                 <div className="min-w-0">
